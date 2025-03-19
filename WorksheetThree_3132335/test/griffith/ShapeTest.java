@@ -11,7 +11,7 @@ public class ShapeTest {
  @Test
  public void testCircleWithComplexValues() {
      Circle circle = new Circle("Circle", 4.987);
-     assertEquals(Math.PI * 4.987 * 4.986, circle.area(), EPSILON);
+     assertEquals(Math.PI * 4.987 * 4.987, circle.area(), EPSILON);
      assertEquals(2 * Math.PI * 4.987, circle.perimeter(), EPSILON);
      assertEquals("Shape: Circle, Radius: 4.987", circle.toString());
  }
