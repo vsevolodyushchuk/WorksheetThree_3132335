@@ -26,10 +26,11 @@ public class ShapeTest {
  
  @Test
  public void testRightAngledTriangle() {
-     RightAngledTriangle triangle = new RightAngledTriangle("Triangle", 3, 4);
-     assertEquals((3 * 4) / 2.0, triangle.area(), EPSILON);
-     assertEquals(3 + 4 + 5, triangle.perimeter(), EPSILON); // Hypotenuse is 5
-     assertEquals("Shape: Triangle, Base: 3, Height: 4", triangle.toString());
+     RightAngledTriangle triangle = new RightAngledTriangle("Triangle", 5.5, 7.8);
+     double hypotenuse = Math.sqrt(5.5 * 5.5 + 7.8 * 7.8);
+     assertEquals((5.5 * 7.8) / 2.0, triangle.area(), EPSILON);
+     assertEquals(5.5 + 7.8 + hypotenuse, triangle.perimeter(), EPSILON);
+     assertEquals("Shape: Triangle, Base: 5.5, Height: 7.8", triangle.toString());
  }
 
 
