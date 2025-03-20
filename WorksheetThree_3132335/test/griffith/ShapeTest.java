@@ -18,10 +18,10 @@ public class ShapeTest {
  
  @Test
  public void testRhombus() {
-     Rhombus rhombus = new Rhombus("Rhombus", 4, 5);
-     assertEquals(4 * 5 / 2.0, rhombus.area(), EPSILON);
-     assertEquals(4 * 4, rhombus.perimeter(), EPSILON);
-     assertEquals("Shape: Rhombus, Side: 4, Height: 5", rhombus.toString());
+     Rhombus rhombus = new Rhombus("Rhombus", 6.23, 8.75);
+     assertEquals(6.23 * 8.75 / 2.0, rhombus.area(), EPSILON);
+     assertEquals(4 * 6.23, rhombus.perimeter(), EPSILON);
+     assertEquals("Shape: Rhombus, Side: 6.23, Height: 8.75", rhombus.toString());
  }
 
 
